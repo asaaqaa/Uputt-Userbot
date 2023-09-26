@@ -309,7 +309,7 @@ async def muter(moot):
             await moot.delete()
 
 
-@ayiin_cmd(pattern="الغاء كتم?: |$)(.*)", group_only=True)
+@ayiin_cmd(pattern="الغاء كتم(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.cungmute(?: |$)(.*)", sudo=True)
 async def ungmoot(un_gmute):
     chat = await un_gmute.get_chat()

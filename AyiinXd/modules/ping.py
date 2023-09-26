@@ -62,13 +62,13 @@ async def _(ping):
     sleep(3)
     await Ayiin.edit(
         f"**╔═════════════════════╗** \n"
-        f"       ㋱ [{user.first_name}](tg://user?id={user.id})㋱ㅤ\n"  ㅤ   
+        f" ♡       [{user.first_name}](tg://user?id={user.id}) \n"  ㅤ   
         f"**╚═════════════════════╝** \n"
         f"⍟ **إصدار تليثون** --'{telever}' \n"
         f"⍟ **وقت التشغيل** --'{uptime}' \n"
-        f"⍟ **إصدار ديزبوت**- {jmvr} \n"
+        f"⍟ **إصدار ديزبوت**-'{jmvr}' \n"
         f"**╔═════════════════════╗**\n"
-        f"       ㅤ㋱'{ping}' ㋱ㅤ       \n"  
+        f"       ㅤ㋱ '{ping}' ㋱ㅤ       \n"  
         f"**╚═════════════════════╝**" % (duration)
     )
 

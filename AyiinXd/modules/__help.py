@@ -27,7 +27,7 @@ from AyiinXd.ayiin import ayiin_cmd, eod, eor
 from Stringyins import get_string
 
 
-@ayiin_cmd(pattern="help(?: |$)(.*)")
+@ayiin_cmd(pattern="مساعده(?: |$)(.*)")
 async def helpyins(event):
     if event.fwd_from:
         return

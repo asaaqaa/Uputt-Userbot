@@ -213,7 +213,7 @@ async def nothanos(unbon):
         await eor(unbon, get_string("band_5"), time=10)
 
 
-@ayiin_cmd(pattern="mute(?: |$)(.*)", group_only=True)
+@ayiin_cmd(pattern="تقييد(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.cmute(?: |$)(.*)", sudo=True)
 async def spider(spdr):
     try:
@@ -251,7 +251,7 @@ async def spider(spdr):
         return await eor(spdr, get_string("error_2"), time=10)
 
 
-@ayiin_cmd(pattern="unmute(?: |$)(.*)", group_only=True)
+@ayiin_cmd(pattern="الغاء تقييد(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.cunmute(?: |$)(.*)", sudo=True)
 async def unmoot(unmot):
     chat = await unmot.get_chat()

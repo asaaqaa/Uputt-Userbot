@@ -17,7 +17,7 @@ async def _(event):
     await xx.edit("`Dan yang terakhir adalah kamu bukan jodohku`")
 
 
-@ayiin_cmd(pattern="punten(?: |$)(.*)")
+@ayiin_cmd(pattern="تجسس(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(
         event,
@@ -28,11 +28,11 @@ async def _(event):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Punten**",
+        "\n*السلام عليكم 🌚**",
     )
 
 
-@ayiin_cmd(pattern="pantau(?: |$)(.*)")
+@ayiin_cmd(pattern="تحبني(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(
         event,
@@ -43,11 +43,11 @@ async def _(event):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Masih Gua Pantau**",
+        "\n**تحبني او اموت **",
     )
 
 
-@ayiin_cmd(pattern="frog(?: |$)(.*)")
+@ayiin_cmd(pattern="وت(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(
         event,
@@ -69,7 +69,7 @@ async def _(event):
     )
 
 
-@ayiin_cmd(pattern="dfrog(?: |$)(.*)")
+@ayiin_cmd(pattern="ماذا(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(
         event,
@@ -136,7 +136,7 @@ async def _(event):
     )
 
 
-@ayiin_cmd(pattern="wlcm(?: |$)(.*)")
+@ayiin_cmd(pattern="كلب(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(
         event,

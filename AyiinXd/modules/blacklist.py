@@ -35,7 +35,7 @@ async def on_new_message(event):
             break
 
 
-@ayiin_cmd(pattern="addbl(?: |$)(.*)")
+@ayiin_cmd(pattern="منع(?: |$)(.*)")
 async def on_add_black_list(addbl):
     text = addbl.pattern_match.group(1)
     to_blacklist = list(
@@ -48,7 +48,7 @@ async def on_add_black_list(addbl):
     )
 
 
-@ayiin_cmd(pattern="listbl(?: |$)(.*)")
+@ayiin_cmd(pattern="المنع(?: |$)(.*)")
 async def on_view_blacklist(listbl):
     all_blacklisted = sql.get_chat_blacklist(listbl.chat_id)
     OUT_STR = get_string("blk_5")
@@ -65,7 +65,7 @@ async def on_view_blacklist(listbl):
                 out_file,
                 force_document=True,
                 allow_cache=False,
-                caption="Blacklist Dalam Obrolan Ini",
+                caption="**قائمة الكلمات الممنوعه بالجروب**",
                 reply_to=listbl,
             )
             await listbl.delete()
@@ -73,7 +73,7 @@ async def on_view_blacklist(listbl):
         await eor(listbl, OUT_STR)
 
 
-@ayiin_cmd(pattern="rmbl(?: |$)(.*)")
+@ayiin_cmd(pattern="الغاء منع(?: |$)(.*)")
 async def on_delete_blacklist(rmbl):
     text = rmbl.pattern_match.group(1)
     to_unblacklist = list(

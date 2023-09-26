@@ -46,7 +46,7 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@ayiin_cmd(pattern="ping$")
+@ayiin_cmd(pattern="فحص$")
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -61,10 +61,15 @@ async def _(ping):
     await Ayiin.edit("🥵")
     sleep(3)
     await Ayiin.edit(
-        f"**㋱ 𝚄𝙿𝚄𝚃𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ㋱**\n\n"
-        f"㋱ **𝙷𝙴𝙽𝙲𝙴𝚄𝚃 :** `%sms`\n"
-        f"㋱ **𝚄𝙿𝚃𝙸𝙼𝙴 :** `{uptime}` \n"
-        f"㋱ **𝙾𝚆𝙽𝙴𝚁 :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"╔═════════════════════╗
+│ ㅤ ㋱ [{user.first_name}](tg://user?id={user.id})㋱ㅤ  ㅤ   
+╚═════════════════════╝\n"
+        f"⍟ **إصدار تليثون** -- {telever} \n"
+        f"⍟ **وقت التشغيل** -- {uptime} \n"
+        f"⍟ **إصدار ديزبوت**- {jmvr} \n"
+        f"╔═════════════════════╗
+│ㅤㅤ㋱ {ping} ㋱ㅤ      ㅤ   
+╚═════════════════════╝" % (duration)
     )
 
 
@@ -101,7 +106,7 @@ async def _(ping):
     )
 
 
-@ayiin_cmd(pattern="keping$")
+@ayiin_cmd(pattern="المطور$")
 async def _(pong):
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -123,7 +128,7 @@ async def _(pong):
 # .keping & kping Coded by Koala
 
 
-@ayiin_cmd(pattern=r"uput$")
+@ayiin_cmd(pattern=r"المدة$")
 async def _(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -149,14 +154,14 @@ async def _(pong):
     await kping.edit("**CROOTTTT AAAHHH.....**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await kping.edit("🥵")
+    await kping.edit("🌚")
     sleep(3)
     await kping.edit(
-        f"**𝙽𝙶𝙴𝙽𝚃𝙾𝚃 𝙰𝙷𝙷!! 🥵**\n**𝙺𝚄𝚃𝙰𝙽𝙶** : %sms\n**𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴** : {uptime}🕛" % (duration)
+        f"**𝙽𝙶𝙴𝙽𝚃𝙾𝚃 𝙰𝙷𝙷!! 🌚**\n**السرعه** : %sms\n**مدة البوت** : {uptime}🕛" % (duration)
     )
 
 
-@ayiin_cmd(pattern="speedtest$")
+@ayiin_cmd(pattern="السرعه$")
 async def _(speed):
     xxnx = await edit_or_reply(speed, "`Running speed test...`")
     test = Speedtest()

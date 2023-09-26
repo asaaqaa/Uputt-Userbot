@@ -309,7 +309,7 @@ async def muter(moot):
             await moot.delete()
 
 
-@ayiin_cmd(pattern="ungmute(?: |$)(.*)", group_only=True)
+@ayiin_cmd(pattern="الغاء كتم?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.cungmute(?: |$)(.*)", sudo=True)
 async def ungmoot(un_gmute):
     chat = await un_gmute.get_chat()
@@ -333,7 +333,7 @@ async def ungmoot(un_gmute):
         await eor(un_gmute, get_string("ungm_3"), time=10)
 
 
-@ayiin_cmd(pattern="gmute(?: |$)(.*)", group_only=True)
+@ayiin_cmd(pattern="كتم(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.cgmute(?: |$)(.*)", sudo=True)
 async def gspider(gspdr):
     chat = await gspdr.get_chat()
@@ -367,7 +367,7 @@ async def gspider(gspdr):
                          )
 
 
-@ayiin_cmd(pattern="zombies(?: |$)(.*)", group_only=True)
+@ayiin_cmd(pattern="تنضيف(?: |$)(.*)", group_only=True)
 async def rm_deletedacc(show):
     con = show.pattern_match.group(1).lower()
     del_u = 0
@@ -415,7 +415,7 @@ async def rm_deletedacc(show):
         )
 
 
-@ayiin_cmd(pattern="admins$", group_only=True)
+@ayiin_cmd(pattern="المشرفين$", group_only=True)
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title or "Grup Ini"
@@ -434,7 +434,7 @@ async def get_admin(show):
     await show.edit(mentions, parse_mode="html")
 
 
-@ayiin_cmd(pattern="pin( loud|$)")
+@ayiin_cmd(pattern="تثبيت( loud|$)")
 @register(pattern=r"^\.cpin( loud|$)", sudo=True)
 async def pin(event):
     to_pin = event.reply_to_msg_id
@@ -451,7 +451,7 @@ async def pin(event):
     await eor(event, get_string("pinn_2"))
 
 
-@ayiin_cmd(pattern="unpin( all|$)")
+@ayiin_cmd(pattern="الغاء تثبيت( all|$)")
 @register(pattern=r"^\.cunpin( all|$)", sudo=True)
 async def pin(event):
     to_unpin = event.reply_to_msg_id
@@ -474,7 +474,7 @@ async def pin(event):
     await eor(event, get_string("upin_3"))
 
 
-@ayiin_cmd(pattern="kick(?: |$)(.*)", group_only=True)
+@ayiin_cmd(pattern="طرد(?: |$)(.*)", group_only=True)
 @register(pattern=r"^\.ckick(?: |$)(.*)", sudo=True)
 async def kick(usr):
     chat = await usr.get_chat()

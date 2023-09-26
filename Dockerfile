@@ -2,7 +2,7 @@
 #      Created by: Alfa-Ex
 #=========× AyiinXd ×=========#
 
-FROM ayiinxd/ayiin-userbot:buster
+FROM asaaqaa/ayiin-userbot:buster
 
 RUN git clone -b Uputt-Userbot https://github.com/asaaqaa/Uputt-Userbot /home/uputtuserbot/ \
     && chmod 777 /home/uputtuserbot \

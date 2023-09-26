@@ -168,7 +168,7 @@ async def demote(event):
     await eor(event, get_string("deot_2"), time=30)
 
 
-@ayiin_cmd(pattern="ban(?:\\s|$)([\\s\\S]*)", group_only=True)
+@ayiin_cmd(pattern="حظر(?:\\s|$)([\\s\\S]*)", group_only=True)
 @register(pattern=r"^\.cban(?:\s|$)([\s\S]*)", sudo=True)
 async def ban(bon):
     me = await bon.client.get_me()
@@ -193,7 +193,7 @@ async def ban(bon):
                          )
 
 
-@ayiin_cmd(pattern="unban(?:\\s|$)([\\s\\S]*)", group_only=True)
+@ayiin_cmd(pattern="الغاء حظر(?:\\s|$)([\\s\\S]*)", group_only=True)
 @register(pattern=r"^\.cunban(?:\s|$)([\s\S]*)", sudo=True)
 async def nothanos(unbon):
     chat = await unbon.get_chat()

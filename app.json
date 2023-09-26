@@ -1,9 +1,9 @@
 {
-  "name": "Uputt-Userbot",
-  "description": "[Uputt-Userbot] Selamat pakai, Luh songong gw Cipok",
+  "name": "DEZ BOT-Userbot",
+  "description": "[Uputt-Userbot] سورس ديز بوت،  يوزر بوت الامبراطور ",
   "logo": "https://telegra.ph/file/f4c1d8888bf604781c163.jpg",
   "keywords": ["telegram", "userbot", "Uputt-Userbot", "modular", "python"],
-  "repository": "https://github.com/iamuput/Uputt-Userbot",
+  "repository": "https://github.com/asaaqaa/Uputt-Userbot",
   "stack": "container",
   "env": {
     "API_KEY": {

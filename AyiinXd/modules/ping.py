@@ -59,7 +59,6 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await Ayiin.edit("🥵")
-    sleep(3)
     await Ayiin.edit(
         f"**╔═════════════════════╗** \n"
         f"**╚═════════════════════╝** \n"   

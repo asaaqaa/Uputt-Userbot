@@ -62,7 +62,7 @@ async def _(ping):
     sleep(3)
     await Ayiin.edit(
         f"**╔═════════════════════╗** \n"
-        f" ♡       [{user.first_name}](tg://user?id={user.id}) \n"  ㅤ   
+        f" ♡       [{mention}](tg://user?id={user.id}) \n"  ㅤ   
         f"**╚═════════════════════╝** \n"
         f"⍟ **إصدار تليثون** --'{telever}' \n"
         f"⍟ **وقت التشغيل** --'{uptime}' \n"
